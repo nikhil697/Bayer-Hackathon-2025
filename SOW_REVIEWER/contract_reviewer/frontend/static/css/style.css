@@ -1,0 +1,122 @@
+/* ---------- Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  color: #333;
+  padding: 20px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 12px 22px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  margin: 0 14px;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+/* ---------- Forms ---------- */
+form {
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #005fcc;
+}
+
+/* ---------- Table Styling ---------- */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+
+/* ---------- Responsive Helpers ---------- */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  form {
+    padding: 18px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

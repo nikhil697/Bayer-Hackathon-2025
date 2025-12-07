@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h3>Analytics Dashboard</h3>
+    <p>Total Reviews: {{ total_docs }}</p>
+    <p>Avg Issues: {{ avg_issues }}</p>
+</div>
+
+<div class="card">
+    <h3>Common Issues</h3>
+    <ul>
+        {% for i in top_issues %}
+        <li>{{ i }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

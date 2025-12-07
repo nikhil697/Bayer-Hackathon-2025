@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h3>Upload a Contract or SOW</h3>
+
+    {% if messages %}
+    <span id="django-message" style="display:none;">{{ messages.0 }}</span>
+    {% endif %}
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label>Choose File</label>
+        <input type="file" name="file" required>
+        <button type="submit">Upload & Analyze</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
+    <title>AI Contract Reviewer</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h2>AI Contract Reviewer</h2>
+        <div>
+            <a href="/">Home</a>
+            <a href="/upload/">Upload</a>
+            <a href="/compare/">Compare</a>
+            <a href="/dashboard/">Dashboard</a>
+        </div>
+    </div>
+
+    {% block content %}{% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h3>Compare Two Documents</h3>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label>Upload File A</label>
+        <input type="file" name="file1" required>
+
+        <label>Upload File B</label>
+        <input type="file" name="file2" required>
+
+        <button type="submit">Compare</button>
+    </form>
+</div>
+
+{% if result %}
+<div class="card">
+    <h3>Comparison Result</h3>
+    <p>{{ result }}</p>
+</div>
+{% endif %}
+{% endblock %}
